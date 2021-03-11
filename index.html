@@ -50,7 +50,7 @@
                 </section>
                 <section id="Why" class="tabcontent">
                     <h2>Why: I just wanna tell you how I'm feeling</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </article>
         </main>
@@ -78,6 +78,13 @@
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+$("#Why").one(function(){
+  //as noted in addendum, check for querystring exitence
+  var symbol = $("#video1")[0].src.indexOf("?") > -1 ? "&" : "?";
+  //modify source to autoplay and start video
+  $("#video1")[0].src += symbol + "autoplay=1";
+ });
         </script>
         <footer>
             <p>This is copyrighted material so if you copy this I'll come after your "&#162;'s" <em>AND</em> your "&#163;'s"!</p>
