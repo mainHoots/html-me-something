@@ -1,1 +1,85 @@
-<p>BRIAN, with an I, Hoots</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hi, I'm a Honda Hawk GT</title>
+        <script>
+            function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="tablink" onclick="openPage('Who', this, 'red')" id="defaultOpen">Who</button>
+                <button class="tablink" onclick="openPage('What', this, 'green')">What</button>
+                <button class="tablink" onclick="openPage('When', this, 'blue')">When</button>
+                <button class="tablink" onclick="openPage('Where', this, 'orange')">Where</button>
+                <button class="tablink" onclick="openPage('Why', this, 'pink')">Why</button>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section id="Who" class="tabcontent">
+                    <h2>Who: Honda Hawk GT</h2>
+                    <figure>
+                        <img src="images/Hawk GT.jpg" alt="1989 Honda Hawk GT in Italian red">
+                        <figcaption>"1989 Honda Hawk GT in Italian red"</figcaption>
+                    </figure>
+                    <p>Hi, I'm a Honda Hawk GT - the RC31 model.  Toshiaki Kishi, my designer, made me one of the first modern naked bikes.  Some say I am <em>always</em> in my birthday suit.  If you're on the hunt for your first motorcycle, look no further - well, it might require a hard look; I'm a rare bird to find.</p>
+                </section>
+                <section id="What" class="tabcontent">
+                    <h2>What: My heart</h2>
+                    <figure>
+                        <img src="images/hawk engine.jpg" alt="650cc off-set, 52&deg; V-twin engine">
+                        <figcaption>"650cc off-set, 52&deg; V-twin engine"</figcaption>
+                    </figure>
+                    <p>I have been told the sound of my beating heart can sound like a lion's roar.  My engine may not be like others, but it can still get you into trouble if there is no respect towards the throttle.  There are old riders and there are bold riders - my heart does not always <em>allow</em> for old, bold riders.</p>
+                </section>
+                <section id="When" class="tabcontent">
+                    <h2>When: Produced from 1988 to 1991</h2>
+                    <figure>
+                        <img src="images/ridinghawk.jpg" alt="Couple of nerds on a non-nerdy motorcycle">
+                        <figcaption>"Hawk GT's spreading their wings"</figcaption>
+                    </figure>
+                    <p>My model was in production from 1988 to 1991.  I may have been produced for a longer time, but the market, at that point in time, was not interested in motorcycles like me.  It has taken almost half a decade for any sort of interest in my sort of look, but now there is so much interest that I can be hard to find.</p>
+                </section>
+                <section id="Where" class="tabcontent">
+                    <h2>Where: Places I can go.</h2>
+                    <figure>
+                        <img src="images/windinghawkgt.jpg" alt="A yellow winding road sign in front of a parked Honda Hawk GT">
+                        <figcaption>"A yellow winding road sign in front of a parked Honda Hawk GT"</figcaption>
+                    </figure>
+                    <p>My power may shine on long, straight empty roads, but my handling shines better on curvy, country roads.  If you're on the interstate and you desire to get ahead of a pack of cars, no need to downshift - just open the throttle a bit more.  If you're confident with your vestibular sense, then you can test my limits at a road racing course.</p>
+                </section>
+                <section id="Why" class="tabcontent">
+                    <h2>Why: I just wanna tell you how I'm feeling</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>This is copyrighted material so if you copy this I'll come after your "&#162;'s" <em>AND</em> your "&#163;'s"!</p>
+        </footer>
+    </body>
+</html>
